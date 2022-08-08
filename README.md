@@ -22,8 +22,16 @@ TODO: List what your package can do. Maybe include images, gifs, or videos.
 
 TODO: List prerequisites and provide or point to information on how to start using the package.
 
-## Usage 
+## Usage
+
+- Import
+
+```dart
+import 'package:dropdown_alert/dropdown_alert.dart';
+```
+
 - Init Widget
+
 ```dart
 class Application extends StatelessWidget {
   const Application({Key? key}) : super(key: key);
@@ -43,4 +51,23 @@ class Application extends StatelessWidget {
     );
   }
 }
+```
+
+- Init controller:
+
+```dart
+///Show alert
+void showAlert(String message,
+    {TextStyle? mesStyle,
+      int initAnimTime = 350,
+      int reverseAnimTime = 350,
+      int limitedTimeShow = 2000,
+      DropdownStyle dropdownStyle = DropdownStyle.none,
+      DropdownPosition position = DropdownPosition.top,
+      EdgeInsets? parentPadding,
+      bool isReverseIconPosition = false,
+      Color dropdownColor = Colors.transparent});
+
+///Hide Alert
+void hideAlert();
 ```
