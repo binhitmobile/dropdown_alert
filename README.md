@@ -33,6 +33,8 @@ import 'package:dropdown_alert/dropdown_alert.dart';
 - Init Widget
 
 ```dart
+import 'package:dropdown_alert/dropdown_alert.dart';
+
 class Application extends StatelessWidget {
   const Application({Key? key}) : super(key: key);
 
@@ -53,11 +55,8 @@ class Application extends StatelessWidget {
 }
 ```
 - Controller
-
 ```dart
-///Init Controller
-DropdownAlertController controller = DropdownAlertController();
-
+import 'package:dropdown_alert/dropdown_alert.dart';
 ///Show alert
 void showAlert(String message,
     {TextStyle? mesStyle,
@@ -72,4 +71,7 @@ void showAlert(String message,
 
 ///Hide Alert
 void hideAlert();
+
+///Init Controller
+DropdownAlertController().showAlert("Something");
 ```
