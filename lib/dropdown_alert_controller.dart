@@ -28,6 +28,8 @@ class DropdownAlertController {
       DropdownPosition position = DropdownPosition.top,
       EdgeInsets? parentPadding,
       bool isReverseIconPosition = false,
+      Widget? icon,
+      double? dropdownHeight,
       Color dropdownColor = Colors.transparent}) {
     if (!stateChangeCommand.lastResult!.state) {
       hideAlert();
@@ -40,6 +42,8 @@ class DropdownAlertController {
         position: position,
         isReverseIconPosition: isReverseIconPosition,
         dropdownBGColor: dropdownColor,
+        icon: icon,
+        dropdownHeight: dropdownHeight,
         parentPadding: parentPadding);
     stateChangeCommand.execute(dropdownAlert);
   }

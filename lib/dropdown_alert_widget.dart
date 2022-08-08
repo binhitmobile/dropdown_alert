@@ -37,7 +37,8 @@ class _DropdownAlertWidgetState extends State<DropdownAlertWidget> {
             return BodyAlertWidget(
               key: UniqueKey(),
               dropdownAlert: snapshot.data!,
-              height: kStatusBarHeight + kToolbarHeight,
+              height:
+                  snapshot.data?.dropdownHeight ?? kStatusBarHeight + kToolbarHeight,
             );
           }
           return const SizedBox();
@@ -131,6 +132,7 @@ class _BodyAlertWidgetState extends State<BodyAlertWidget>
         },
         height: widget.height,
         bgColor: bgColor,
+        icon: widget.dropdownAlert.icon,
         message: widget.dropdownAlert.message,
         mesStyle: mesStyle);
     if (widget.dropdownAlert.position == DropdownPosition.center) {

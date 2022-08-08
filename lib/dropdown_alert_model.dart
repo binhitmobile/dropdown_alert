@@ -19,6 +19,10 @@ class DropdownAlertModel {
 
   int reverseAnimTime = 350;
 
+  double? dropdownHeight;
+
+  Widget? icon;
+
   DropdownAlertModel();
 
   DropdownAlertModel.create(this.message,
@@ -28,6 +32,8 @@ class DropdownAlertModel {
       this.reverseAnimTime = 350,
       this.position = DropdownPosition.top,
       this.parentPadding,
+      this.icon,
+      this.dropdownHeight,
       this.isReverseIconPosition = false,
       this.dropdownBGColor = Colors.transparent})
       : state = true;
