@@ -8,7 +8,15 @@ package might be useful for them.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to start using the package.
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  dropdown_alert:
+    git:
+      url: https://github.com/binhitmobile/dropdown_alert.git
+      
+```
 
 ## Usage
 
