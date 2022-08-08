@@ -58,20 +58,9 @@ class Application extends StatelessWidget {
 ```dart
 import 'package:dropdown_alert/dropdown_alert.dart';
 ///Show alert
-void showAlert(String message,
-    {TextStyle? mesStyle,
-      int initAnimTime = 350,
-      int reverseAnimTime = 350,
-      int limitedTimeShow = 2000,
-      DropdownStyle dropdownStyle = DropdownStyle.none,
-      DropdownPosition position = DropdownPosition.top,
-      EdgeInsets? parentPadding,
-      bool isReverseIconPosition = false,
-      Color dropdownColor = Colors.transparent});
+DropdownAlertController().showAlert("Something");
 
 ///Hide Alert
-void hideAlert();
+DropdownAlertController().hideAlert();
 
-///Init Controller
-DropdownAlertController().showAlert("Something");
 ```
