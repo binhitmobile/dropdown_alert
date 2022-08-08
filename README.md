@@ -52,10 +52,12 @@ class Application extends StatelessWidget {
   }
 }
 ```
-
-- Init controller:
+- Controller
 
 ```dart
+///Init Controller
+DropdownAlertController controller = DropdownAlertController();
+
 ///Show alert
 void showAlert(String message,
     {TextStyle? mesStyle,
