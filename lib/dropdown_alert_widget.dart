@@ -19,7 +19,7 @@ class _DropdownAlertWidgetState extends State<DropdownAlertWidget> {
   @override
   void initState() {
     super.initState();
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       alertStateListener = RxCommandListener(
           DropdownAlertController().stateChangeCommand,
           onValue: (value) {});
@@ -92,7 +92,7 @@ class _BodyAlertWidgetState extends State<BodyAlertWidget>
         DropdownAlertController().hideAlert();
       }
     });
-    WidgetsBinding.instance!.addPostFrameCallback((timeStamp) {
+    WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
       controller!.forward();
       startTimer();
     });
